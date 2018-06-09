@@ -1,0 +1,11 @@
+h1 {text-align: center;}
+#master{width:1440px;}
+.badge{font-size:3rem;}
+.btn{font-size:2.5rem;}
+.form-control{font-size:2rem;}
+#MainForm{font-size:2rem;width: 150px;}
+#MainForm2{font-size:2rem;height: 4rem;width: 310px;}
+.custom-select{font-size:2rem;height: 4rem}
+input[type=checkbox] {
+    transform: scale(2.0);
+  }

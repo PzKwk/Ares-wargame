@@ -1,0 +1,1 @@
+<a href="<?php echo URL;?>/Fraktion/<?php echo $this->Land;?>" class="badge badge-success ml-5 mt-5">Success</a>

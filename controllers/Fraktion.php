@@ -85,6 +85,13 @@ class Fraktion extends Controller {
            
             if (isset($_POST["alleslöschen"])&&$_POST["alleslöschen"]== true){
                 
+                $this->view->render('Fraktion/allesloeschen');
+                
+            }
+
+            if (isset($_POST["wirklichallesloeschen"])&&$_POST["wirklichallesloeschen"]== true){
+
+
                 $this->model->delete("deutschland");
 
                 $this->view->Anzahl=$this->model->getAnzahl("deutschland");
@@ -101,10 +108,18 @@ class Fraktion extends Controller {
                 $this->view->Stahl=$this->model->getStahl("deutschland");
                 $this->view->OSR=$this->model->getOSR("deutschland");
 
-            }
+                }
+                
+
 
             if (isset($_POST["bestätigen"])&&$_POST["bestätigen"]== true){
                
+                $this->view->render('Fraktion/bestaetigen');
+            }    
+                if (isset($_POST["wirklichBestaetigen"])&&$_POST["wirklichBestaetigen"]== true){
+
+
+
                 $this->model->bestätige("deutschland");
                 $this->model->delete("deutschland");
 
@@ -121,9 +136,15 @@ class Fraktion extends Controller {
                 $this->view->Öl=$this->model->getÖl("deutschland");
                 $this->view->Stahl=$this->model->getStahl("deutschland");
                 $this->view->OSR=$this->model->getOSR("deutschland");
-            }
-
+                }
+              
+            
             if (isset($_POST["neuesSpiel"])&&$_POST["neuesSpiel"]== true){
+
+                $this->view->render('Fraktion/neuesSpiel');
+            }
+                if (isset($_POST["wirklichNeuesSpiel"])&&$_POST["wirklichNeuesSpiel"]== true){
+
                 $this->model->neuRes("deutschland");
                 $this->model->neuEk("deutschland");
 
@@ -145,6 +166,8 @@ class Fraktion extends Controller {
                 $this->view->Stahl=$this->model->getStahl("deutschland");
                 $this->view->OSR=$this->model->getOSR("deutschland");
             }
+            
+        
             
             
 
@@ -218,6 +241,13 @@ class Fraktion extends Controller {
            
             if (isset($_POST["alleslöschen"])&&$_POST["alleslöschen"]== true){
                 
+                $this->view->render('Fraktion/allesloeschen');
+                
+            }
+
+            if (isset($_POST["wirklichallesloeschen"])&&$_POST["wirklichallesloeschen"]== true){
+
+
                 $this->model->delete("japan");
 
                 $this->view->Anzahl=$this->model->getAnzahl("japan");
@@ -235,9 +265,12 @@ class Fraktion extends Controller {
                 $this->view->OSR=$this->model->getOSR("japan");
 
             }
+           
 
             if (isset($_POST["bestätigen"])&&$_POST["bestätigen"]== true){
-               
+                $this->view->render('Fraktion/bestaetigen');
+            }    
+                if (isset($_POST["wirklichBestaetigen"])&&$_POST["wirklichBestaetigen"]== true){
                 $this->model->bestätige("japan");
                 $this->model->delete("japan");
 
@@ -257,6 +290,9 @@ class Fraktion extends Controller {
             }
 
             if (isset($_POST["neuesSpiel"])&&$_POST["neuesSpiel"]== true){
+                $this->view->render('Fraktion/neuesSpiel');
+            }
+                if (isset($_POST["wirklichNeuesSpiel"])&&$_POST["wirklichNeuesSpiel"]== true){
                 $this->model->neuRes("japan");
                 $this->model->neuEk("japan");
 
@@ -346,6 +382,14 @@ class Fraktion extends Controller {
            
             if (isset($_POST["alleslöschen"])&&$_POST["alleslöschen"]== true){
                 
+ 
+                $this->view->render('Fraktion/allesloeschen');
+                
+            }
+
+            if (isset($_POST["wirklichallesloeschen"])&&$_POST["wirklichallesloeschen"]== true){
+
+
                 $this->model->delete("italien");
 
                 $this->view->Anzahl=$this->model->getAnzahl("italien");
@@ -363,9 +407,12 @@ class Fraktion extends Controller {
                 $this->view->OSR=$this->model->getOSR("italien");
 
             }
+           
 
             if (isset($_POST["bestätigen"])&&$_POST["bestätigen"]== true){
-               
+                $this->view->render('Fraktion/bestaetigen');
+            }    
+                if (isset($_POST["wirklichBestaetigen"])&&$_POST["wirklichBestaetigen"]== true){
                 $this->model->bestätige("italien");
                 $this->model->delete("italien");
 
@@ -385,6 +432,9 @@ class Fraktion extends Controller {
             }
 
             if (isset($_POST["neuesSpiel"])&&$_POST["neuesSpiel"]== true){
+                $this->view->render('Fraktion/neuesSpiel');
+            }
+                if (isset($_POST["wirklichNeuesSpiel"])&&$_POST["wirklichNeuesSpiel"]== true){
                 $this->model->neuRes("italien");
                 $this->model->neuEk("italien");
 
@@ -473,7 +523,13 @@ class Fraktion extends Controller {
 
            
             if (isset($_POST["alleslöschen"])&&$_POST["alleslöschen"]== true){
+                 
+                $this->view->render('Fraktion/allesloeschen');
                 
+            }
+
+            if (isset($_POST["wirklichallesloeschen"])&&$_POST["wirklichallesloeschen"]== true){
+
                 $this->model->delete("finnland");
 
                 $this->view->Anzahl=$this->model->getAnzahl("finnland");
@@ -493,7 +549,9 @@ class Fraktion extends Controller {
             }
 
             if (isset($_POST["bestätigen"])&&$_POST["bestätigen"]== true){
-               
+                $this->view->render('Fraktion/bestaetigen');
+            }    
+                if (isset($_POST["wirklichBestaetigen"])&&$_POST["wirklichBestaetigen"]== true){
                 $this->model->bestätige("finnland");
                 $this->model->delete("finnland");
 
@@ -513,6 +571,9 @@ class Fraktion extends Controller {
             }
 
             if (isset($_POST["neuesSpiel"])&&$_POST["neuesSpiel"]== true){
+                $this->view->render('Fraktion/neuesSpiel');
+            }
+                if (isset($_POST["wirklichNeuesSpiel"])&&$_POST["wirklichNeuesSpiel"]== true){
                 $this->model->neuRes("finnland");
                 $this->model->neuEk("finnland");
 
@@ -611,7 +672,13 @@ class Fraktion extends Controller {
 
            
             if (isset($_POST["alleslöschen"])&&$_POST["alleslöschen"]== true){
+                 
+                $this->view->render('Fraktion/allesloeschen');
                 
+            }
+
+            if (isset($_POST["wirklichallesloeschen"])&&$_POST["wirklichallesloeschen"]== true){
+
                 $this->model->delete("usa");
 
                 $this->view->Anzahl=$this->model->getAnzahl("usa");
@@ -631,7 +698,9 @@ class Fraktion extends Controller {
             }
 
             if (isset($_POST["bestätigen"])&&$_POST["bestätigen"]== true){
-               
+                $this->view->render('Fraktion/bestaetigen');
+            }    
+                if (isset($_POST["wirklichBestaetigen"])&&$_POST["wirklichBestaetigen"]== true){
                 $this->model->bestätige("usa");
                 $this->model->delete("usa");
 
@@ -651,6 +720,9 @@ class Fraktion extends Controller {
             }
 
             if (isset($_POST["neuesSpiel"])&&$_POST["neuesSpiel"]== true){
+                $this->view->render('Fraktion/neuesSpiel');
+            }
+                if (isset($_POST["wirklichNeuesSpiel"])&&$_POST["wirklichNeuesSpiel"]== true){
                 $this->model->neuRes("usa");
                 $this->model->neuEk("usa");
 
@@ -747,7 +819,13 @@ class Fraktion extends Controller {
 
            
             if (isset($_POST["alleslöschen"])&&$_POST["alleslöschen"]== true){
+                 
+                $this->view->render('Fraktion/allesloeschen');
                 
+            }
+
+            if (isset($_POST["wirklichallesloeschen"])&&$_POST["wirklichallesloeschen"]== true){
+
                 $this->model->delete("england");
 
                 $this->view->Anzahl=$this->model->getAnzahl("england");
@@ -767,7 +845,9 @@ class Fraktion extends Controller {
             }
 
             if (isset($_POST["bestätigen"])&&$_POST["bestätigen"]== true){
-               
+                $this->view->render('Fraktion/bestaetigen');
+            }    
+                if (isset($_POST["wirklichBestaetigen"])&&$_POST["wirklichBestaetigen"]== true){
                 $this->model->bestätige("england");
                 $this->model->delete("england");
 
@@ -787,6 +867,9 @@ class Fraktion extends Controller {
             }
 
             if (isset($_POST["neuesSpiel"])&&$_POST["neuesSpiel"]== true){
+                $this->view->render('Fraktion/neuesSpiel');
+            }
+                if (isset($_POST["wirklichNeuesSpiel"])&&$_POST["wirklichNeuesSpiel"]== true){
                 $this->model->neuRes("england");
                 $this->model->neuEk("england");
 
@@ -886,7 +969,13 @@ class Fraktion extends Controller {
 
            
             if (isset($_POST["alleslöschen"])&&$_POST["alleslöschen"]== true){
+                 
+                $this->view->render('Fraktion/allesloeschen');
                 
+            }
+
+            if (isset($_POST["wirklichallesloeschen"])&&$_POST["wirklichallesloeschen"]== true){
+
                 $this->model->delete("russland");
 
                 $this->view->Anzahl=$this->model->getAnzahl("russland");
@@ -906,7 +995,9 @@ class Fraktion extends Controller {
             }
 
             if (isset($_POST["bestätigen"])&&$_POST["bestätigen"]== true){
-               
+                $this->view->render('Fraktion/bestaetigen');
+            }    
+                if (isset($_POST["wirklichBestaetigen"])&&$_POST["wirklichBestaetigen"]== true){
                 $this->model->bestätige("russland");
                 $this->model->delete("russland");
 
@@ -926,6 +1017,9 @@ class Fraktion extends Controller {
             }
 
             if (isset($_POST["neuesSpiel"])&&$_POST["neuesSpiel"]== true){
+                $this->view->render('Fraktion/neuesSpiel');
+            }
+                if (isset($_POST["wirklichNeuesSpiel"])&&$_POST["wirklichNeuesSpiel"]== true){
                 $this->model->neuRes("russland");
                 $this->model->neuEk("russland");
 
@@ -1021,7 +1115,13 @@ class Fraktion extends Controller {
 
            
             if (isset($_POST["alleslöschen"])&&$_POST["alleslöschen"]== true){
+               
+                $this->view->render('Fraktion/allesloeschen');
                 
+            }
+
+            if (isset($_POST["wirklichallesloeschen"])&&$_POST["wirklichallesloeschen"]== true){
+  
                 $this->model->delete("china");
 
                 $this->view->Anzahl=$this->model->getAnzahl("china");
@@ -1041,7 +1141,9 @@ class Fraktion extends Controller {
             }
 
             if (isset($_POST["bestätigen"])&&$_POST["bestätigen"]== true){
-               
+                $this->view->render('Fraktion/bestaetigen');
+            }    
+                if (isset($_POST["wirklichBestaetigen"])&&$_POST["wirklichBestaetigen"]== true){
                 $this->model->bestätige("china");
                 $this->model->delete("china");
 
@@ -1061,6 +1163,9 @@ class Fraktion extends Controller {
             }
 
             if (isset($_POST["neuesSpiel"])&&$_POST["neuesSpiel"]== true){
+                $this->view->render('Fraktion/neuesSpiel');
+            }
+                if (isset($_POST["wirklichNeuesSpiel"])&&$_POST["wirklichNeuesSpiel"]== true){
                 $this->model->neuRes("china");
                 $this->model->neuEk("china");
 

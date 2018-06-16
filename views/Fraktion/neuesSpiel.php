@@ -7,3 +7,4 @@
         <button class="btn btn-outline-danger" name="wirklichNeuesSpiel" value="true">wirklich neues Spiel?</button>
         <button class="btn btn-outline-success" name="wirklichKeinNeuesSpiel" value="true">nein kein neues Spiel!</button>
         </form>
+		<br>

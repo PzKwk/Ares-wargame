@@ -7,3 +7,4 @@
         <button class="btn btn-outline-danger" name="wirklichBestaetigen" value="true">wirklich bestätigen?</button>
         <button class="btn btn-outline-success" name="wirklichnichtBestaetigen" value="true">nein nichts bestätigen!</button>
         </form>
+		<br>
